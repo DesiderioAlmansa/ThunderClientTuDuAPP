@@ -1,0 +1,549 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "TuDuApp",
+    "collectionId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+    "dateExported": "2024-07-12T13:09:23.726Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "Project",
+            "containerId": "",
+            "created": "2024-06-19T20:21:58.137Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "Task",
+            "containerId": "",
+            "created": "2024-06-19T20:23:34.313Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-07-01T15:03:21.513Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "1956a4a7-f01f-4562-bfba-913864ab3ee5",
+            "name": "Team",
+            "containerId": "",
+            "created": "2024-07-06T15:51:38.975Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "0970a294-5674-40fa-8a4d-2e0f6ee9ca24",
+            "name": "Notes",
+            "containerId": "",
+            "created": "2024-07-08T12:33:07.191Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "00d02da3-4d39-4fa6-8b9e-9f2219e86309",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "DELETE projects",
+            "url": "http://localhost:5500/api/projects/6686d751d41d7655db318468",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2024-06-19T17:33:18.685Z",
+            "modified": "2024-07-04T19:01:45.239Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZkNmZiZDQxZDc2NTVkYjMxODQ1YiIsImlhdCI6MTcyMDExMjkyNiwiZXhwIjoxNzIwMTI3MzI2fQ.l6lEO7RTzFw7_yW9Y48eJ7P1fTKMP0-Nkl9eL4RVcyM"
+            }
+        },
+        {
+            "_id": "ebc8c8f2-49d6-4a45-bb00-8c96a1db30a2",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "POST tasks",
+            "url": "http://localhost:5500/api/projects/6675c933157da4e9e30112a9/tasks",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-19T18:39:17.664Z",
+            "modified": "2024-06-21T19:31:23.758Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Probando midleware\",\n    \"description\": \"BBBBBBBBBBBBBBBBB\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3d8cc899-8430-478b-915d-c5f8e56f9189",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST create account",
+            "url": "http://localhost:5500/api/auth/create-account",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-01T15:03:36.686Z",
+            "modified": "2024-07-01T20:02:50.003Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"prueba\",\n    \"password\": \"12345678\",\n    \"password_confirmation\": \"12345678\",\n    \"email\": \"prueba@email.es\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "756ab04c-9c8c-492c-8bb4-c314188d575b",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "0970a294-5674-40fa-8a4d-2e0f6ee9ca24",
+            "name": "POST note",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/tasks/668ac7fd6c26fef964277ce3/notes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-08T12:32:58.966Z",
+            "modified": "2024-07-08T12:49:43.619Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"content\": \"Otra notilla\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ0MjU0MiwiZXhwIjoxNzIwNDU2OTQyfQ.lEHMg3RjGQQSh7NMlL4M2HMu2aLmy0RIzXZoArglzKo"
+            }
+        },
+        {
+            "_id": "a3960832-be27-426a-9ae6-4414bef47948",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "POST projects",
+            "url": "http://localhost:5500/api/projects",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-19T17:43:14.911Z",
+            "modified": "2024-07-04T19:06:21.215Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Proyecto test\",\n    \"client\": \"test\",\n    \"description\": \"test\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZkNmZiZDQxZDc2NTVkYjMxODQ1YiIsImlhdCI6MTcyMDExMjkyNiwiZXhwIjoxNzIwMTI3MzI2fQ.l6lEO7RTzFw7_yW9Y48eJ7P1fTKMP0-Nkl9eL4RVcyM"
+            }
+        },
+        {
+            "_id": "4f0c7e2d-eae5-4c2d-b6be-913104d0f371",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "GET allTasks",
+            "url": "http://localhost:5500/api/projects/6675c933157da4e9e30112a9/tasks",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-20T16:16:37.251Z",
+            "modified": "2024-06-21T19:55:01.507Z",
+            "headers": []
+        },
+        {
+            "_id": "baf8a5af-09e7-43c8-b86d-a4fe2c04d6c4",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST confirm account",
+            "url": "http://localhost:5500/api/auth/confirm-account",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-01T16:22:26.809Z",
+            "modified": "2024-07-01T18:16:16.609Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"token\": \"625061\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bda09035-23c3-48da-bee5-679a9c5911a3",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST request new code",
+            "url": "http://localhost:5500/api/auth/request-code",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-01T20:09:24.774Z",
+            "modified": "2024-07-01T20:11:19.860Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\": \"prueba@email.es\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e65c1060-c691-4558-856b-f8fbc84c2048",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "0970a294-5674-40fa-8a4d-2e0f6ee9ca24",
+            "name": "Get notes",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/tasks/668ac7fd6c26fef964277ce3/notes",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-08T12:47:50.146Z",
+            "modified": "2024-07-08T12:48:10.964Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ0MjU0MiwiZXhwIjoxNzIwNDU2OTQyfQ.lEHMg3RjGQQSh7NMlL4M2HMu2aLmy0RIzXZoArglzKo"
+            }
+        },
+        {
+            "_id": "2a77a5ee-f1bd-4db6-9da0-3406a6859b1f",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "GET tasks",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/tasks/668ac7fd6c26fef964277ce3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-21T18:03:42.742Z",
+            "modified": "2024-07-08T12:54:08.833Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ0MjU0MiwiZXhwIjoxNzIwNDU2OTQyfQ.lEHMg3RjGQQSh7NMlL4M2HMu2aLmy0RIzXZoArglzKo"
+            }
+        },
+        {
+            "_id": "0e929103-96e2-433e-b224-25ab279db90f",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "GET login",
+            "url": "http://localhost:5500/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-01T18:06:20.038Z",
+            "modified": "2024-07-08T18:21:29.264Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"desi@email.es\",\n    \"password\" : \"11111111\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0e58d8a1-40f5-4462-a7bb-8bd89a09a0ec",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST forgot password",
+            "url": "http://localhost:5500/api/auth/forgot-password",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-03T16:46:57.724Z",
+            "modified": "2024-07-03T16:54:41.277Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\": \"prueba@email.es\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a5703aca-0b92-4cbe-a084-fae5d26adac8",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST validate token",
+            "url": "http://localhost:5500/api/auth/validate-token",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-03T17:39:52.413Z",
+            "modified": "2024-07-03T17:53:08.414Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"token\": \"840473\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "897351d1-6231-4138-9a9b-a507a6847a69",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "0970a294-5674-40fa-8a4d-2e0f6ee9ca24",
+            "name": "DELETE note",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/tasks/668ac7fd6c26fef964277ce3/notes/668be06939b7b2d6f36d672c",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-07-08T15:12:16.450Z",
+            "modified": "2024-07-08T15:14:53.581Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ0MjU0MiwiZXhwIjoxNzIwNDU2OTQyfQ.lEHMg3RjGQQSh7NMlL4M2HMu2aLmy0RIzXZoArglzKo"
+            }
+        },
+        {
+            "_id": "7f63ea4f-fa3a-4d15-8331-0f4f0f68d68f",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST update current password",
+            "url": "http://localhost:5500/api/auth/update-password",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2024-07-08T17:49:45.143Z",
+            "modified": "2024-07-08T17:50:33.178Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"current_password\": \"hola1234\",\n    \"password\": \"holahola\",\n    \"password_confirmation\": \"holahola\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "da46b9af-444d-47cf-b970-9846bcc44ad9",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "GET projects",
+            "url": "http://localhost:5500/api/projects/6686d751d41d7655db318468",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-06-19T18:22:47.849Z",
+            "modified": "2024-07-04T18:57:56.249Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZkNmZiZDQxZDc2NTVkYjMxODQ1YiIsImlhdCI6MTcyMDExMjkyNiwiZXhwIjoxNzIwMTI3MzI2fQ.l6lEO7RTzFw7_yW9Y48eJ7P1fTKMP0-Nkl9eL4RVcyM"
+            }
+        },
+        {
+            "_id": "e2da9452-236d-4e6b-b4a2-5bdb8175e20a",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "PUT tasks",
+            "url": "http://localhost:5500/api/projects/6675c933157da4e9e30112a9/tasks/6675d5a67eab5592464705d0",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-21T18:32:12.764Z",
+            "modified": "2024-06-21T19:36:05.841Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": " {\"name\": \"sdf\",\n  \"description\": \"UUUUU\"}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a47f952e-a4e6-43fb-b236-839f63aed0dc",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "DELETE tasks",
+            "url": "http://localhost:5500/api/projects/6675c933157da4e9e30112a9/tasks/6675cc96c394af68da9127f4",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-06-21T18:42:43.700Z",
+            "modified": "2024-06-21T19:21:44.159Z",
+            "headers": []
+        },
+        {
+            "_id": "122bf64d-5ed7-4797-bd66-313e50ce9bb1",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST update password",
+            "url": "http://localhost:5500/api/auth/update-password/840473",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-03T17:45:54.784Z",
+            "modified": "2024-07-03T17:53:26.179Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"password\": \"hola1234\",\n    \"password_confirmation\": \"hola1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2830d37e-5c10-4570-bc56-f81fde159ff7",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "GET allProjects",
+            "url": "http://localhost:5500/api/projects",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-06-20T16:14:47.692Z",
+            "modified": "2024-07-04T17:12:34.801Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZkNmZiZDQxZDc2NTVkYjMxODQ1YiIsImlhdCI6MTcyMDExMjkyNiwiZXhwIjoxNzIwMTI3MzI2fQ.l6lEO7RTzFw7_yW9Y48eJ7P1fTKMP0-Nkl9eL4RVcyM"
+            }
+        },
+        {
+            "_id": "be99a14c-78ec-41fc-8cdc-256de1e8a7dd",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "7b13d13f-26a8-4f03-b494-cdd7d0caa0ef",
+            "name": "PUT projects",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-06-19T20:22:52.385Z",
+            "modified": "2024-07-04T19:00:58.267Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Proyecto 3 actualizado\",\n    \"client\": \"ACTUALIZADO\",\n    \"description\": \"ACTUALIZADO\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODZkNmZiZDQxZDc2NTVkYjMxODQ1YiIsImlhdCI6MTcyMDExMjkyNiwiZXhwIjoxNzIwMTI3MzI2fQ.l6lEO7RTzFw7_yW9Y48eJ7P1fTKMP0-Nkl9eL4RVcyM"
+            }
+        },
+        {
+            "_id": "20e5ab45-e8ab-409c-b265-bf43fdf0e862",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "4336736c-bb7e-4713-be13-74a2fc049b7e",
+            "name": "POST tasks status",
+            "url": "http://localhost:5500/api/projects/6675c933157da4e9e30112a9/tasks/6675cc96c394af68da9127f4/status",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-21T18:53:58.159Z",
+            "modified": "2024-06-21T19:21:20.197Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": " {\"status\": \"inProgress\"}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a1f31cf1-7814-427d-ad4f-20cd09e426cf",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "POST check password",
+            "url": "http://localhost:5500/api/auth/check-password",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-07-08T18:19:06.855Z",
+            "modified": "2024-07-08T18:21:56.423Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"password\": \"11111111\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ2Mjg4OSwiZXhwIjoxNzIwNDc3Mjg5fQ.4BF161Aykj8Cv6hv6bUJaO_zUPWvHvuDoJjkN3PnDeY"
+            }
+        },
+        {
+            "_id": "dfb76822-5b4d-45c9-afa2-d9eb9541723b",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "GET user",
+            "url": "http://localhost:5500/api/auth/user",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-07-04T19:22:56.400Z",
+            "modified": "2024-07-04T19:24:20.271Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDEyMTAzNCwiZXhwIjoxNzIwMTM1NDM0fQ.TA9TDeHX982ZvbwQFU9eFuA01l9_sxwKwNYvOesGQwU"
+            }
+        },
+        {
+            "_id": "1fa2df92-be9a-4f34-9a24-5d64c38030de",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "1956a4a7-f01f-4562-bfba-913864ab3ee5",
+            "name": "POST findMember",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/team/find",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-07-06T15:52:23.948Z",
+            "modified": "2024-07-06T16:29:58.691Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"prueba@email.es\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDI4MTE5NywiZXhwIjoxNzIwMjk1NTk3fQ.q3Md5BXzD_HZIgFTkOM6wwqd5BhBol9TDQjCRz-odVQ"
+            }
+        },
+        {
+            "_id": "5a3656ad-2d64-4d54-8923-63bff82be430",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "664e004f-e3e6-407b-b7c9-752535f23fcf",
+            "name": "PUT profile",
+            "url": "http://localhost:5500/api/auth/profile",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-07-08T17:41:38.652Z",
+            "modified": "2024-07-08T17:42:45.977Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"prueba actualizado\",\n  \"email\": \"pruebaactualizado@email.es\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDQ2MDU1NiwiZXhwIjoxNzIwNDc0OTU2fQ.7CBwcHoUS14Lx_YVrs-meNq7OT4g24cQ7nLpt_I_E-E"
+            }
+        },
+        {
+            "_id": "8b65f5d9-cec6-46d0-939e-8085d7d88a40",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "1956a4a7-f01f-4562-bfba-913864ab3ee5",
+            "name": "POST addMember",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/team",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-07-06T16:32:02.411Z",
+            "modified": "2024-07-06T16:33:18.959Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"6686d6fbd41d7655db31845b\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDI4MTE5NywiZXhwIjoxNzIwMjk1NTk3fQ.q3Md5BXzD_HZIgFTkOM6wwqd5BhBol9TDQjCRz-odVQ"
+            }
+        },
+        {
+            "_id": "451bcbeb-112d-4b3a-ad07-ab67cea27796",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "1956a4a7-f01f-4562-bfba-913864ab3ee5",
+            "name": "DELETE deleteMember",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/team/6686d6fbd41d7655db31845b",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-07-06T16:55:53.695Z",
+            "modified": "2024-07-06T18:24:50.592Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDI4MTE5NywiZXhwIjoxNzIwMjk1NTk3fQ.q3Md5BXzD_HZIgFTkOM6wwqd5BhBol9TDQjCRz-odVQ"
+            }
+        },
+        {
+            "_id": "4ddaf05e-e49c-4dc3-8865-6ef3b877ad66",
+            "colId": "e472721d-0931-4c8a-9739-b8b3a025eaf4",
+            "containerId": "1956a4a7-f01f-4562-bfba-913864ab3ee5",
+            "name": "GET getTeamMembers",
+            "url": "http://localhost:5500/api/projects/6686d738d41d7655db318465/team",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-07-06T17:00:01.970Z",
+            "modified": "2024-07-06T17:00:22.872Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODMwYjY5NDRlNWIzZjlkOGU1ZTdiOCIsImlhdCI6MTcyMDI4MTE5NywiZXhwIjoxNzIwMjk1NTk3fQ.q3Md5BXzD_HZIgFTkOM6wwqd5BhBol9TDQjCRz-odVQ"
+            }
+        }
+    ],
+    "ref": "IwCSh7jQsaHe2FCR6n-KJtRIXNBxS3yA9HvG9BfYpz8_KND7jDPm0X4ktL6F7jiiKeLM50oTzcN-qufy0IIe5w"
+}
